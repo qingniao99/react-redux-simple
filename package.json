@@ -1,0 +1,44 @@
+{
+  "name": "react-redux-simple",
+  "version": "1.0.0",
+  "description": "simple demo for react_redux",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack | node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qingniao99/react-redux-simple.git"
+  },
+  "keywords": [
+    "react",
+    "redux"
+  ],
+  "author": "qingniao99",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/qingniao99/react-redux-simple/issues"
+  },
+  "homepage": "https://github.com/qingniao99/react-redux-simple#readme",
+  "devDependencies": {
+    "babel": "^6.5.2",
+    "babel-core": "^6.11.4",
+    "babel-loader": "^6.2.4",
+    "keymirror": "^0.1.1",
+    "koa": "^1.2.1",
+    "koa-static": "^2.0.0",
+    "react": "^15.2.1",
+    "react-dom": "^15.2.1",
+    "react-redux": "^4.4.5",
+    "react-router": "^2.6.0",
+    "react-router-redux": "^4.0.5",
+    "redux": "^3.5.2",
+    "redux-logger": "^2.6.1",
+    "redux-router": "^2.1.1",
+    "redux-thunk": "^2.1.0",
+    "reselect": "^2.5.3",
+    "webpack": "^1.13.1",
+    "webpack-dev-middleware": "^1.6.1",
+    "webpack-hot-middleware": "^2.12.2"
+  }
+}
