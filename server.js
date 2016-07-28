@@ -6,4 +6,5 @@ var serve = require('koa-static');
 var port = 6789;
 
 app.use(serve(__dirname + '/'));
-app.listen(port);
+app.listen(port, function(){
+       console.log( "==========666666666666666666666======================" )});
