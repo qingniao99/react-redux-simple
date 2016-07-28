@@ -4,7 +4,9 @@
   "description": "simple demo for react_redux",
   "main": "index.js",
   "scripts": {
-    "start": "webpack && node server.js"
+    "start": "npm run server && npm run webpack",
+    "webpack": "webpack -w",
+    "server": "node server.js"
   },
   "repository": {
     "type": "git",

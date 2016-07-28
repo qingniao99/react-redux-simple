@@ -5,12 +5,13 @@ var path = require('path')
 var webpack = require('webpack')
 
 module.exports = {
-    entry: [
-        './index'
-    ],
+    entry: {
+        bundle1: './index.js',
+        bundle2: './index2.js'
+    },
     output: {
         path: path.join(__dirname, 'dist'),
-        filename: 'bundle.js',
+        filename: '[name].js',
         publicPath: '/static/'
     },
     //plugins: [
@@ -21,10 +22,18 @@ module.exports = {
         loaders: [
             {
                 test: /\.js|jsx$/,
-                loaders: [ 'babel' ],
+                loaders: ['babel'],
                 exclude: /node_modules/,
                 include: __dirname
             }
         ]
     }
+    //},
+    //plugins: [
+    //    new webpack.optimize.UglifyJsPlugin({
+    //        compress: {
+    //            //supresses warnings, usually from module minification
+    //            warnings: false
+    //        }
+    //    })]
 }
