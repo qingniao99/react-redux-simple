@@ -7,7 +7,8 @@ var webpack = require('webpack')
 module.exports = {
     entry: {
         bundle1: './index.js',
-        bundle2: './index2.js'
+        bundle2: './index2.js',
+        bundle3: './index3.js'
     },
     output: {
         path: path.join(__dirname, 'dist'),
