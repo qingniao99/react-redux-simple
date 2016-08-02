@@ -8,7 +8,8 @@ module.exports = {
     entry: {
         bundle1: './index.js',
         bundle2: './index2.js',
-        bundle3: './index3.js'
+        bundle3: './index3.js',
+        bundle4: './index4.js'
     },
     output: {
         path: path.join(__dirname, 'dist'),
