@@ -1,10 +1,11 @@
 /**
  * Created by qignniao99 on 2016/8/3.
  */
+require('babel-polyfill');
 var actionType= require("../constants/constant");
 var stateDefault ={
     title: "盗墓笔记",
-    data: "../img/6666.mp4"
+    data: "http://qingniao99.qiniudn.com/6666.mp4"
 };
 
 var vedio = function(state, action) {

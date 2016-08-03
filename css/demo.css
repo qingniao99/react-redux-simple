@@ -13,9 +13,9 @@ body{margin:0;position:relative; font-family:Arial,"微软雅黑";color:#666; fo
 .pageShow{ display:block;}
 .btn{ position:absolute; bottom:17px; left:17px;width:606px;height:74px; font-size:30px; background:#cacaca; border-radius:5px;}
 .submit{ background:#3c9bbb; color:#fff;}
-.info{ font-size:26px; line-height:60px; text-align:center;width:100%; position:absolute;bottom:90px; -webkit-transform-origin:bottom; -webkit-transform:scale(0); transition:0.5s; opacity:0;}
+.info{ font-size:26px; line-height:60px; text-align:center;width:100%; position:absolute;bottom:90px; -webkit-transform-origin:bottom; -webkit-transform:scale(0); -webkit-transition:0.5s;transition:0.5s; opacity:0;}
 .scrollWrap{ position:relative;height:100%;min-height:1136px; overflow:hidden;}
-#welcome{ transition:.7s;}
+#welcome{ -webkit-transition:.7s;transition:.7s;}
 .tree{ position:absolute;left:0;top:10%;width:100%; -webkit-transform:translateY(100px);transform:translateY(100px); opacity:0; -webkit-animation:1s tree; animation:1s tree; -webkit-animation-fill-mode:forwards; animation-fill-mode:forwards;}
 #logo{ text-align:center; position:absolute;left:0;width:100%;bottom:5%; opacity:0; -webkit-animation:logo .5s 1s; -webkit-animation-fill-mode:forwards;}
 .welcome2{ position:relative; padding-top:50px; opacity:0; transform:translateY(50px);animation:1s .3s tree; animation-fill-mode:forwards; }
@@ -26,7 +26,7 @@ body{margin:0;position:relative; font-family:Arial,"微软雅黑";color:#666; fo
 .cloud:nth-of-type(2){ left:79px;top:77px;width:91px;height:70px; -webkit-animation:cloud 3s 2.5s infinite alternate linear;}
 .cloud:nth-of-type(3){ left:402px;top:142px;width:54px;height:41px;-webkit-animation:cloud 3s 2.8s infinite alternate linear;}
 
-#index{ transition:0.5s;}
+#index{ -webkit-transition: 0.5s;transition:0.5s;}
 #tabPic,#tabPic2{ overflow:hidden; position:relative;width: 100%;}
 #picList,#picList2{ overflow:hidden;width:100%;}
 #picList2 video{width: 100%}
@@ -41,7 +41,7 @@ body{margin:0;position:relative; font-family:Arial,"微软雅黑";color:#666; fo
 #score h2{ font-size:28px;}
 #score li{height:60px; position:relative;}
 #score nav{ position:absolute;left:187px;top:12px;}
-#score nav a{float:left; background:url(../img/star.png) no-repeat -38px 0; width:38px;height:36px;margin-right:39px; transition:.3s;}
+#score nav a{float:left; background:url(../img/star.png) no-repeat -38px 0; width:38px;height:36px;margin-right:39px;-webkit-transition:.3s; transition:.3s;}
 #score nav .active{ background-position:0 0;}
 
 .tags{padding:21px 0 0 26px;}
@@ -51,7 +51,7 @@ body{margin:0;position:relative; font-family:Arial,"微软雅黑";color:#666; fo
 .tags label span{float:left;border:1px solid #cdd6e1;padding:0 24px; border-radius:26px;}
 .tags input:checked+span{ border-color:#3c9bbb; background-color:#3c9bbb;color:#fff;}
 .tags .activespan+span{ border-color:#3c9bbb; background-color:#3c9bbb;color:#fff;}
-#mask{background:rgba(0,0,0,0.7) url(../img/mask.png) no-repeat center 300px; transition:1s; opacity:0;}
+#mask{background:rgba(0,0,0,0.7) url(../img/mask.png) no-repeat center 300px; -wekbit-transition:1s;transition:1s; opacity:0;}
 .newsBtn{position:absolute;top:20px;right:20px;width:56px;height:56px;padding:11px 11px; font-size:22px; line-height:28px; letter-spacing:2px; text-align:center; background:rgba(230,0,18,0.6);color:#fff; text-decoration:none; border-radius:39px; font-size:21px; -webkit-animation:newsBtn 2s alternate infinite;}
 
 #news{opacity:0; background:#eee;}

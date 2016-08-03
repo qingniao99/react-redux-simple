@@ -1,3 +1,4 @@
+require('babel-polyfill');
 var actionType= require("../constants/constant");
 var stateDefault = {
     title: "score",

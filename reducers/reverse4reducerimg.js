@@ -1,3 +1,4 @@
+require('babel-polyfill');
 var actionType= require("../constants/constant");
 var stateDefault ={
     title: "成都九寨沟景区",
