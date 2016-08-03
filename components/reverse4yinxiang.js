@@ -3,56 +3,63 @@
  */
 var React = require('react');
 var Reverse4yinxiang = React.createClass({
-    getInitialState: function() {console.log(this.props.yinxiang)
+    getInitialState: function () {
+        console.log(this.props.yinxiang)
         return {};
     },
 
-    render: function() {
+    render: function () {
+        var actions = this.props.actions;
+        var yinxiang = this.props.yinxiang;
+        var data = yinxiang.data;
+
         return (
             <section className="tags" id="indexTag">
                 <h2>给景区添加标签</h2>
-                <label>
-                    <input type="radio" name="tags" value="服务好" />
-                    <span>服务好</span>
-                </label>
-                <label>
-                    <input type="radio" name="tags" value="景色赞" />
-                    <span>景色赞</span>
-                </label>
-                <label>
-                    <input type="radio" name="tags" value="千篇一律" />
-                    <span>千篇一律</span>
-                </label>
-                <label>
-                    <input type="radio" name="tags" value="看人海" />
-                    <span>看人海</span>
-                </label>
-                <label>
-                    <input type="radio" name="tags" value="挤爆了" />
-                    <span>挤爆了</span>
-                </label>
-                <label>
-                    <input type="radio" name="tags" value="服务好" />
-                    <span>服务好</span>
-                </label>
-                <label>
-                    <input type="radio" name="tags" value="景色赞" />
-                    <span>景色赞</span>
-                </label>
-                <label>
-                    <input type="radio" name="tags" value="千篇一律" />
-                    <span>千篇一律</span>
-                </label>
-                <label>
-                    <input type="radio" name="tags" value="看人海" />
-                    <span>看人海</span>
-                </label>
-                <label>
-                    <input type="radio" name="tags" value="挤爆了" />
-                    <span>挤爆了</span>
-                </label>
+                {data.map(function (v, i) {
+                    return <Reverse4yinxiangchild key={i} title={v.title} actions={actions} value={v.value} id={v.id} data={data}/>
+                })}
             </section>
         );
+    }
+});
+
+var Reverse4yinxiangchild = React.createClass({
+    handler: function (a) {
+        var actions = this.props.actions;
+        var data = this.props.data;
+        for (var i = 0; i < data.length; i++) {
+            data[i].value = 0;
+        }
+        for (var i = 0; i < data.length; i++) {
+            if (data[i].id == a) {
+                data[i].value = 1;
+            }
+        }
+        actions.yinxiang(data);
+    },
+    render: function () {
+        var title = this.props.title;
+        var value = this.props.value;
+        var id = this.props.id;
+
+        if (value == 1) {
+            return (
+                <label onClick={this.handler.bind(this,id)}>
+                    <input type="hidden" name="tags" value={title} className="activespan"
+                           />
+                    <span>{title}</span>
+                </label>
+            )
+        } else {
+            return (
+                <label onClick={this.handler.bind(this,id)}>
+                    <input type="hidden" name="tags" value={title} />
+                    <span>{title}</span>
+                </label>
+            )
+        }
+
     }
 });
 

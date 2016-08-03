@@ -8,13 +8,15 @@ var Reverse4img = React.createClass({
     },
 
     render: function() {
+        var img = this.props.img.src;
+        var title = this.props.img.title;
         return (
             <section id="tabPic">
                 <ul id="picList">
-                    <li><img src="/img/1.jpg" /></li>
+                    <li><img src={img} /></li>
                 </ul>
                 <section className="picMask">
-                    <p>成都九寨沟景区</p>
+                    <p>{title}</p>
                     <nav>
                         <a href="javascript:;" className="active"></a>
                     </nav>

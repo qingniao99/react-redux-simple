@@ -12,6 +12,10 @@ var yinxiang = function (data) {
 var img = function (data) {
     return {type: actionType.img, data}
 }
+var vedio = function (data) {
+    return {type: actionType.vedio, data}
+}
 module.exports.score = score;
 module.exports.yinxiang = yinxiang;
 module.exports.img = img;
+module.exports.vedio = vedio;

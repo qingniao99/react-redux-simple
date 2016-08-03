@@ -61,7 +61,6 @@ var Reverse4scorelia = React.createClass({
                 data[i].score = a;
             }
         }
-        console.log(data);
         actions.score(data);
     },
     render: function () {

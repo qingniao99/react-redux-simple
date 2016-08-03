@@ -8,5 +8,6 @@ module.exports = keyMirror({
     "reverse2":null,
     "score":null,
     "yinxiang":null,
-    "img":null
+    "img":null,
+    "vedio":null
 });
