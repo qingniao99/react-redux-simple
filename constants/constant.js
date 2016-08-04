@@ -9,5 +9,6 @@ module.exports = keyMirror({
     "score":null,
     "yinxiang":null,
     "img":null,
-    "vedio":null
+    "vedio":null,
+    "submit":null
 });

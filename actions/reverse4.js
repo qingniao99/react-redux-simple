@@ -15,7 +15,11 @@ var img = function (data) {
 var vedio = function (data) {
     return {type: actionType.vedio, data}
 }
+var submit = function (data) {
+    return {type: actionType.submit, data}
+}
 module.exports.score = score;
 module.exports.yinxiang = yinxiang;
 module.exports.img = img;
 module.exports.vedio = vedio;
+module.exports.submit = submit;

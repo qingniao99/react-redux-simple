@@ -6,12 +6,14 @@ var score = require("./reverse4reducerscore");
 var yinxiang = require("./reverse4reduceryinxiang");
 var img = require("./reverse4reducerimg");
 var vedio = require("./reverse4reducervedio");
+var submit = require("./reverse4reducersubmit");
 
 var rootReducer = combineReducers({
     score,
     yinxiang,
     img,
-    vedio
+    vedio,
+    submit
 });
 
 module.exports = rootReducer;

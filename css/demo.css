@@ -68,3 +68,14 @@ body{margin:0;position:relative; font-family:Arial,"微软雅黑";color:#666; fo
 #formTag input:checked+span{ border-color:#fff; background-color:rgba(60,155,187,0.8);}
 #formTag .activespan+span{ border-color:#fff; background-color:rgba(60,155,187,0.8);}
 .formText{ box-sizing:border-box;width:100%; display:block; font-size:26px; line-height:50px; padding:10px 20px; margin-top:30px;}
+.tags{
+    overflow: hidden;
+}
+.submitr{
+    width: 100%;
+    background-color: #3c9bbb;
+    color: #ffffff;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+}
