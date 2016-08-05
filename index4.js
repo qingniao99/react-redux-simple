@@ -3,11 +3,14 @@
  */
 var React = require('react');
 var ReactDOM = require('react-dom');
+var thunkMiddleware = require("redux-thunk").default;
+var createLogger = require("redux-logger");
 var createStore = require("redux").createStore;
+var applyMiddleware = require("redux").applyMiddleware;
 var Provider = require("react-redux").Provider;
 var preState = require("./store/reverse4.store.js");
 var reverseReducer = require("./reducers/reverse4");
-var store = createStore(reverseReducer,preState);
+var store = createStore(reverseReducer,preState,applyMiddleware(thunkMiddleware, createLogger()));
 var App = require("./containers/reverse4");
 
 ReactDOM.render(

@@ -10,5 +10,7 @@ module.exports = keyMirror({
     "yinxiang":null,
     "img":null,
     "vedio":null,
-    "submit":null
+    "submit":null,
+    "doubanFalse":null,
+    "doubanTrue":null
 });
