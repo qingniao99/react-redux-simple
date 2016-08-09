@@ -10,3 +10,5 @@ simple demo for react_redux
 访问http://127.0.0.1:6789/html/index3.html
 
 访问http://127.0.0.1:6789/html/index4.html
+
+访问http://127.0.0.1:6789/html/index5.html
