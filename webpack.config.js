@@ -3,6 +3,7 @@
  */
 var path = require('path')
 var webpack = require('webpack')
+var CleanWebpackPlugin = require('clean-webpack-plugin');
 
 module.exports = {
     entry: {
@@ -16,10 +17,6 @@ module.exports = {
         filename: '[name].js',
         publicPath: '/static/'
     },
-    //plugins: [
-    //    new webpack.optimize.OccurrenceOrderPlugin(),
-    //    new webpack.HotModuleReplacementPlugin()
-    //],
     module: {
         loaders: [
             {
@@ -29,13 +26,15 @@ module.exports = {
                 include: __dirname
             }
         ]
-    }
-    //},
-    //plugins: [
-    //    new webpack.optimize.UglifyJsPlugin({
-    //        compress: {
-    //            //supresses warnings, usually from module minification
-    //            warnings: false
-    //        }
-    //    })]
+    },
+    plugins: [
+        new webpack.optimize.OccurrenceOrderPlugin(),
+        new webpack.HotModuleReplacementPlugin(),
+        new CleanWebpackPlugin(['dist'], {
+            root: process.cwd(),
+            verbose: true,
+            dry: false,
+            exclude: []
+        })
+    ]
 }
