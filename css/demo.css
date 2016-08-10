@@ -79,3 +79,4 @@ body{margin:0;position:relative; font-family:Arial,"微软雅黑";color:#666; fo
     line-height: 100px;
     text-align: center;
 }
+.floata a{float: left;margin-left: 5px;}
