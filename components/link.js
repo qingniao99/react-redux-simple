@@ -14,7 +14,7 @@ var link = React.createClass({
                 <Link to="/Reverse5vedio">{"video"}</Link>
                 <Link to="/Reverse5score">{"score"}</Link>
                 <Link to="/Reverse5yinxiang">{"yinxiang"}</Link>
-                <Link to="/Reversesubmit">{"denglu"}</Link>
+                <Link to="/Reverse5submit">{"denglu"}</Link>
                 <Link to="/Reverse5douban">{"豆瓣"}</Link>
             </div>
         )
